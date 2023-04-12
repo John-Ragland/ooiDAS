@@ -1,0 +1,23 @@
+# >>> add at binaries to path >>>
+export PATH=/home/jhrag/Code/at/Kraken:$PATH
+export PATH=/home/jhrag/Code/at/KrakenField:$PATH
+export PATH=/home/jhrag/Code/at/Bellhop:$PATH
+# <<< add at binaries to path <<<
+
+# >>> add azure access token >>>
+export AZURE_KEY_lfhydrophone="UohL6H3jDaDLliug0g2Lg5qZZNKWdyxkq2S5KYLE0EFwLjo09auQp48PyhBRKJtYsfjXMmie/d/9+AStLFAniQ=="
+export AZURE_CONSTR_lfhydrophone="DefaultEndpointsProtocol=https;AccountName=lfhydrophone;AccountKey=UohL6H3jDaDLliug0g2Lg5qZZNKWdyxkq2S5KYLE0>
+export AZURE_SAS_lfhydrophone="?sv=2021-08-06&se=2022-11-25T17%3A04%3A05Z&sr=c&sp=rl&sig=TJBsZdHmystDzNB2%2FUGXSB0k5S4VYs5aXaIUvBTHLRY%3D"
+export AZURE_CONSTR_ooidata="DefaultEndpointsProtocol=https;AccountName=ooidata;AccountKey=ibLlKtCIS3BRkG2XveLGlTgs4dElF0PAs7HFKaZ5LhVuQiJgEhL>"
+export AZURE_KEY_dasdata="X3Hx05zkPXvESvGzbS2fN2eIJt6/iclGM11BJK1S6CZ4XfIMX25IKrFQ3xj+VZVssIinccjzuSy0+AStJF/+6w=="
+export AZURE_CONSTR_dasdata="DefaultEndpointsProtocol=https;AccountName=dasdata;AccountKey=X3Hx05zkPXvESvGzbS2fN2eIJt6/iclGM11BJK1S6CZ4XfIMX25>"
+# <<< add azure access token <<<
+
+# >>> add azcopy to path >>>
+export PATH=/home/jhrag/azcopy_linux_amd64_10.16.1:$PATH
+# <<< add azcopy to path <<<
+
+# >>> add ooi API tokens to environment
+export OOI_USERNAME="OOIAPI-9OW3P96UZ9YKH6"
+export OOI_TOKEN="TEMP-TOKEN-A3STSZK6P6ULST"
+# <<< add ooi API tokens to environment

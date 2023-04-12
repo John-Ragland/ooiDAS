@@ -1,0 +1,986 @@
+    1  du -sh ctd_data.nc 
+    2  conda activate ooi_Dev
+    3  conda activate ooi_dev
+    4  bash jupyter.sh 
+    5  conda activate ooi_dev
+    6  htop
+    7  conda activate ooi_dev
+    8  conda list
+    9  cd /datadrive
+   10  ls
+   11  cd CTD_data
+   12  ls
+   13  cd data_explorer/
+   14  ls
+   15  tmux new -s grid
+   16  conda activate ooi_dev
+   17  bash jupyter.sh 
+   18  conda activate ooi_dev
+   19  cd ~/Code/ooi_NI_inversion/
+   20  ls
+   21  python grid_CTD.py 
+   22  conda activate ooi_dev
+   23  tmux ls
+   24  tmux a -t grid
+   25  conda activate ooi_dev
+   26  bash jupyter.sh 
+   27  file 0001.png
+   28  conda activate ooi_dev
+   29  cd ..
+   30  ffmpeg -r 30 -f image2 -s 3900x1800 -i animation/%04d.png -vcodec libx264 -crf 25  -pix_fmt yuv420p NCCF_through_time.mp4
+   31  conda activate ooi_dev
+   32  bash jupyter.sh 
+   33  conda activate ooi_dev
+   34  bash jupyter.sh 
+   35  conda activate ooi_dev
+   36  pip install ooipy
+   37  conda list
+   38  pip install ooipy==1.1.5
+   39  conda list
+   40  conda activate ooi_dev
+   41  bash jupyter.sh 
+   42  conda activate ooi_dev
+   43  bash jupyter.sh 
+   44  cd /datadrive
+   45  ls
+   46  cd simulation
+   47  ls
+   48  cd ..
+   49  ls
+   50  cd ~
+   51  ls
+   52  cd ..
+   53  ls
+   54  cd ..
+   55  ls
+   56  cd ~
+   57  ls
+   58  mv yearlong_TDGF_simulated.nc /datadrive/simulation/
+   59  conda activate ooi_dev
+   60  bash jupyter.sh 
+   61  conda activate ooi_dev
+   62  conda list
+   63  conda install -c conda-forge sklearn
+   64  conda install -c conda-forge scikit-learn
+   65  conda activate ooi_dev
+   66  conda list
+   67  conda activate ooi_dev
+   68  bash jupyter.sh 
+   69  conda activate ooi_dev
+   70  bash jupyter.sh 
+   71  conda activate ooi_dev
+   72  bash jupyter.sh 
+   73  conda install -c conda-forge kerchunk
+   74  conda activate ooi_dev
+   75  conda install -c conda-forge kerchunk
+   76  conda install -c conda-forge s3fs
+   77  conda list
+   78  cd ~
+   79  ls
+   80  cd anaconda3/
+   81  ls
+   82  python
+   83  cd envs/ooi_dev/lib/python3.10/site-packages/fsspec
+   84  ls
+   85  cd ~
+   86  conda install -c conda-forge s3fs=2023.1.0
+   87  pip install s3fs
+   88  conda activate ooi_dev
+   89  bashj jupyter.sh 
+   90  bash jupyter.sh 
+   91  conda activate ooi_dev
+   92  /home/jhrag/anaconda3/envs/ooi_dev/bin/python
+   93  conda activate ooi_dev
+   94  cd scripts
+   95  python download_mseed.py
+   96  python
+   97  python download_mseed.py
+   98  tmux new -s mseed
+   99  tmux ls
+  100  tmux a -t mseed
+  101  conda activate ooi_dev
+  102  cd /datadrive
+  103  ls
+  104  rm -rf lf_hydrophone_data_test.zarr/
+  105  df -h /datadrive
+  106  du -sh *
+  107  conda activate ooi_dev
+  108  tmux new -s bmon
+  109  df -h /datadrive
+  110  cd /datadrive
+  111  ls
+  112  du -sh lf_hydrophone_data_test.zarr/
+  113  tmux a bmon
+  114  tmux a -t bmon
+  115  conda activate ooi_de
+  116  conda activate ooi_dev
+  117  ls
+  118  bash jupyter.sh 
+  119  exit
+  120  bmon
+  121  conda activate ooi_dev
+  122  python download_mseed.py
+  123  cd Code/OOI_hydrophone_cloud/
+  124  git status
+  125  git add .
+  126  git status
+  127  git commit -m 'updated for appending new data'
+  128  git push
+  129  git status
+  130  exit
+  131  cd /datadrive
+  132  ls
+  133  cd NCCFs
+  134  ls
+  135  cd old
+  136  ls
+  137  conda activate ooi_dev
+  138  bash jupyter.sh 
+  139  conda activate ooi_dev
+  140  tmux ls
+  141  tmux new -s mseed2zarr
+  142  tmux new -s bmon
+  143  cd /datadrive
+  144  ls
+  145  du -sh ooi_lfhydrophones.zarr/
+  146  conda activate ooi_dev
+  147  tmux a -t mseed2zarr
+  148  tmux a -t bmon
+  149  cd /datadrive
+  150  ls
+  151  du -sh ooi_lfhydrophones.zarr/
+  152  exit
+  153  tmux ls
+  154  tmux a -t mseed2zarr
+  155  htop -d 0.5
+  156  tmux a -t bmon
+  157  cd /datadrive
+  158  ls
+  159  du -sh ooi_lfhydrophones.zarr/
+  160  tmux a -t mseed2zarr
+  161  condexit
+  162  exit
+  163  tmux ls
+  164  tmux a -t mseed2zarr
+  165  cd /datadrive
+  166  ls
+  167  du -sh ooi_lfhydrophones.zarr/
+  168  df -h /datadrive
+  169  ls -h
+  170  du -sh *
+  171  cd ASA_fall_2022
+  172  cd ASA_fall2022/
+  173  ls
+  174  cd ..
+  175  zip ASA_fall2022/
+  176  df -h /datadrive
+  177  du -sh *
+  178  df -h /datadrive
+  179  tmux a -t mseed2zarr
+  180  df -h /datadrive
+  181  du -sh *
+  182  cd simulation
+  183  ls
+  184  azcopy
+  185  azcopy login
+  186  ls
+  187  c d..
+  188  cd ..
+  189  ls
+  190  azcopy "ASA_fall2022/" "https://jhragarchive.blob.core.windows.net/archive/"
+  191  azcopy copy "ASA_fall2022/" "https://jhragarchive.blob.core.windows.net/archive/"
+  192  azcopy copy "ASA_fall2022/" "https://jhragarchive.blob.core.windows.net/archive/" --recursive
+  193  azcopy login
+  194  azcopy copy "ASA_fall2022/" "https://jhragarchive.blob.core.windows.net/archive/" --recursive
+  195  azcopy copy "ASA_fall2022/" "https://jhragarchive.blob.core.windows.net/archive?sp=racwdli&st=2023-03-08T19:19:51Z&se=2023-03-09T03:19:51Z&spr=https&sv=2021-12-02&sr=c&sig=9BrAjiSfbl47%2FIV5sP4CqyvD6Q20aILwzGX27XXzJgk%3D" --recurscive
+  196  azcopy copy "ASA_fall2022/" "https://jhragarchive.blob.core.windows.net/archive?sp=racwdli&st=2023-03-08T19:19:51Z&se=2023-03-09T03:19:51Z&spr=https&sv=2021-12-02&sr=c&sig=9BrAjiSfbl47%2FIV5sP4CqyvD6Q20aILwzGX27XXzJgk%3D" --recursive
+  197  tmux a -t bnmon
+  198  tmux a -t bmon
+  199  df -h /lfhydrophone
+  200  cd /lfhydrophone/
+  201  ls
+  202  du -sh ooi_lfhydrophones.zarr/
+  203  cd ..
+  204  cd datadrive/
+  205  du -sh ooi_lfhydrophones.zarr/
+  206  sudo df -h /lfhydrophone/
+  207  cd /lfhydrophone
+  208  du ooi_lfhydrophones.zarr/
+  209  sudo du ooi_lfhydrophones.zarr/
+  210  sudo du ooi_lfhydrophones.zarr
+  211  sudo du -sh ooi_lfhydrophones.zarr
+  212  cd /datadrive
+  213  ls
+  214  rm -rf ASA_fall2022
+  215  df -h /datadrive/
+  216  ld
+  217  ls
+  218  du -sh *
+  219  cd DAS
+  220  ls
+  221  cd h5files/
+  222  ls
+  223  cd ..
+  224  du -sh h5files/
+  225  cd ..
+  226  ls
+  227  du -sh *
+  228  cd simulation
+  229  ls
+  230  du -sh (+*
+  231  du -sh *
+  232  cd caldera_surface_source
+  233  ls
+  234  cd ..
+  235  rm -rf caldera_surface_source
+  236  ls
+  237  rm -rf caldera_surface_source_NoDuct
+  238  cd ..
+  239  du -sh simulation/
+  240  ls
+  241  df -h /lfhydrophone/
+  242  du -sh /ooi
+  243  ls
+  244  du -sh ooi_lfhydrophones.zarr/
+  245  sudo du -sh /lfhydrophone/ooi_lfhydrophones.zarr/
+  246  sudo du /lfhydrophone/ooi_lfhydrophones.zarr/
+  247  du -sh /lfhydrophone/ooi_lfhydrophones.zarr/
+  248  tmux a -t mseed2zarr
+  249  exit
+  250  conda activate ooi_dev
+  251  ls
+  252  cd scripts
+  253  ls
+  254  python mseed2zarr.py 
+  255  tmux a -t mseed2zarr
+  256  cd /lfhydrophone/
+  257  ls
+  258  du -sh ooi_lfhydrophones.zarr/
+  259  tmux a -t mseed2zarr
+  260  tmux new -s azcopy
+  261  tmux a -t bmon
+  262  tmux new -s azcopy
+  263  tmux a -t azcopy
+  264  exit
+  265  tmux a -t azcopy
+  266  exit
+  267  conda activate ooi_dev
+  268  ls
+  269  azcopy login
+  270  azcopy copy "ooi_lfhydrophones.zarr" "https://lfhydrophone.blob.core.windows.net/hydrophonedata"
+  271  azcopy copy "ooi_lfhydrophones.zarr" "https://lfhydrophone.blob.core.windows.net/hydrophonedata/sp=r&st=2023-03-09T01:12:21Z&se=2023-03-09T09:12:21Z&spr=https&sv=2021-12-02&sr=c&sig=lGUsXFZczoKnqkgvACbPPSaN1caEObikiCH246aJj5I%3D"
+  272  azcopy --recursive "ooi_lfhydrophones.zarr/" "https://lfhydrophone.blob.core.windows.net/hydrophonedata?sp=r&st=2023-03-09T01:12:21Z&se=2023-03-09T09:12:21Z&spr=https&sv=2021-12-02&sr=c&sig=lGUsXFZczoKnqkgvACbPPSaN1caEObikiCH246aJj5I%3D"
+  273  azcopy copy --recursive "ooi_lfhydrophones.zarr/" "https://lfhydrophone.blob.core.windows.net/hydrophonedata?sp=r&st=2023-03-09T01:12:21Z&se=2023-03-09T09:12:21Z&spr=https&sv=2021-12-02&sr=c&sig=lGUsXFZczoKnqkgvACbPPSaN1caEObikiCH246aJj5I%3D"
+  274  azcopy copy --recursive "ooi_lfhydrophones.zarr/" "https://lfhydrophone.blob.core.windows.net/hydrophonedata?sp=racwdli&st=2023-03-09T01:12:21Z&se=2023-03-09T09:12:21Z&spr=https&sv=2021-12-02&sr=c&sig=HE2BMthDnT8kcc4rGcxrz9AoPVOdpIao7o2LuiUH1qg%3D"
+  275  tmux ls
+  276  tmux a -t azcopy
+  277  exit
+  278  bmon
+  279  conda activate ooi_dev
+  280  cd scripts
+  281  python mseed2zarr.py 
+  282  chmod 777 /lfhydrophone/
+  283  sudo chmod 777 /lfhydrophone/
+  284  python mseed2zarr.py 
+  285  tmux a -t bmon
+  286  cd /datadrive
+  287  du -sh *
+  288  lsblk -o NAME,HCTL,SIZE,MOUNTPOINT | grep -i "sd"
+  289  sudo parted /dev/sdd --script mklabel gpt mkpart xfspart xfs 0% 100%
+  290  sudo mkfs.xfs /dev/sdd1
+  291  sudo partprobe /dev/sdd1
+  292  sudo mkdir /lfhydrophone
+  293  sudo mount /dev/sdd1 /lfhydrophone
+  294  sudo blkid
+  295  sudo nano /etc/fstab
+  296  lsblk -o NAME,HCTL,SIZE,MOUNTPOINT | grep -i "sd"
+  297  ls
+  298  mv -r ooi_lfhydrophones.zarr/ /lfhydrophone/
+  299  mv ooi_lfhydrophones.zarr/ /lfhydrophone/
+  300  sudo mv ooi_lfhydrophones.zarr/ /lfhydrophone/
+  301  tmux ls
+  302  tmux a -t mseed2zarr
+  303  tmux a -t bmon
+  304  df -h /lfhydrophone/
+  305  conda activate ooi_dev
+  306  bash jupyter.sh 
+  307  cd /lfhydrophone
+  308  cd /lfhydrophone/
+  309  ls
+  310  cd ..
+  311  ls
+  312  htop -d 0.5
+  313  cd /datadrive/NCCFs
+  314  ls
+  315  rm -rm 1hr_20150101_20230101_ec_cc.zarr
+  316  rm -rf 1hr_20150101_20230101_ec_cc.zarr
+  317  df -sh /datadrive
+  318  df -h /datadrive
+  319  ls
+  320  rm -rf 1hr_20150101_20230101_ec_cc.zarr
+  321  du -sh *
+  322  rm -rf 1hr_20150101_20230101_ec_cc.nc 
+  323  du -sh *
+  324  htop
+  325  htop -d 0.5
+  326  rm -rf 1hr_20150101_20230101_ec_cc.nc 
+  327  ls
+  328  du -sh 1hr_20150101_20230101_ec_cc.nc 
+  329  rm -rf 1hr_20150101_20230101_ec_cc.nc 
+  330  htop
+  331  df /home
+  332  df -h /home
+  333  du -sh /home
+  334  cd /home
+  335  du -sh *
+  336  cd jhrag
+  337  ls
+  338  du -sh  *
+  339  cd Code
+  340  du -sh *
+  341  cd OOI_hydrophone_cloud
+  342  du -sh *
+  343  cd scripts
+  344  ls
+  345  cd ..
+  346  cd data
+  347  ls
+  348  cd ..
+  349  ls
+  350  cd scripts
+  351  ls
+  352  cd tmp
+  353  ls
+  354  cd ..
+  355  ls
+  356  du -sh *
+  357  cd tmp
+  358  du -sh *
+  359  rm 2022_09_24.miniseed 
+  360  cd ..
+  361  du -sh *
+  362  cd data
+  363  ls
+  364  cd ..
+  365  rm -rf data
+  366  du -sh *
+  367  cd experimentation/
+  368  ls
+  369  rm test.miniseed 
+  370  rm waveform.request 
+  371  cd ..
+  372  du -sh *
+  373  cd kauai
+  374  l
+  375  du -sh *
+  376  cd notebooks
+  377  ls
+  378  mv *.mat /datadrive/kauai/
+  379  ls
+  380  cd ..
+  381  du -sh *
+  382  cd surface_duct/
+  383  ls
+  384  du -sh *
+  385  cd simulation
+  386  ls
+  387  du -sh *
+  388  cd multiprocessing
+  389  l
+  390  cd ..
+  391  rm -rf multiprocessing
+  392  du -sh *
+  393  mv oct01_pf_sd125.pkl /datadrive/simulation/surfaceduct
+  394  cd ..
+  395  ls
+  396  cd ..
+  397  du -sh *
+  398  cd surface duct
+  399  cd surface_duct/
+  400  du -sh *
+  401  cd simulation
+  402  du -sh *
+  403  rm -rf multiprocessing2/
+  404  cd ..
+  405  du -sh *
+  406  cd surface_duct
+  407  ls
+  408  cd simulation
+  409  du -sh *
+  410  cd ..
+  411  ls
+  412  du -sh *
+  413  cd ..
+  414  du -sh *
+  415  df -h
+  416  cd /datadrive
+  417  cd NCCFs
+  418  ls
+  419  rm 1hr_20150101_20230101_ec_cc.nc 
+  420  htop -d 0.6
+  421  cd /datdrie
+  422  cd /datadrive
+  423  ls
+  424  cd simulation
+  425  ls
+  426  mkdir surfaceduct
+  427  df -h
+  428  conda activate ooi_dev
+  429  bash jupyter.sh 
+  430  conda activate ooi_dev
+  431  conda install -c conda-forge intake
+  432  du -sh single_file.json
+  433  conda activate ooi_dev
+  434  bash jupyter.sh 
+  435  conda activate ooi_dev
+  436  conda list
+  437  conda install -c conda-forge zarr
+  438  conda install -c fsspec
+  439  conda install -c condaforge fsspec
+  440  conda install -c conda-forge fsspec
+  441  conda activate ooi_dev
+  442  bash jupyter.sh 
+  443  exit
+  444  conda activate ooi_dev
+  445  bash jupyter.sh 
+  446  conda activate ooi_dev
+  447  exit
+  448  nano .bashrc
+  449  conda activate ooi_dev
+  450  nano ~/.zshrc
+  451  cd ~
+  452  ls -a 
+  453  nano .bashrc
+  454  tmux new -s h5_upload
+  455  conda activate ooi_dev
+  456  bash jupyter.sh 
+  457  conda activate ooi_dev
+  458  nano .bashrc
+  459  cd ..
+  460  nano .bashrc
+  461  nano .bashrc
+  462  cd /etc/skel
+  463  ls
+  464  lss
+  465  ls -a
+  466  ls -l
+  467  ls -al
+  468  nano .bashrc
+  469  cp .bashrc ~/.bashrc
+  470  cd ~
+  471  ls -a
+  472  nano .bashrc
+  473  cd ..
+  474  ls
+  475  cd jhrag
+  476  ls
+  477  bash Anaconda3-2022.05-Linux-x86_64.sh 
+  478  ls
+  479  cp anaconda3
+  480  cp anaconda3 anaconda3_backup
+  481  cp -r anaconda3/ anaconda3_backup/
+  482  ls
+  483  du -sh anaconda3_backup/
+  484  du -sh anaconda3
+  485  cd anaconda3
+  486  l
+  487  ls
+  488  cd bin
+  489  cd activate
+  490  ls
+  491  cd activate
+  492  activate
+  493  cd activate
+  494  cd ~
+  495  source ~/anaconda3/bin/activate
+  496  conda init
+  497  nano .bashrc
+  498  conda activate ooi_dev
+  499  conda
+  500  conda activate
+  501  conda activate ooi_dev
+  502  cd Code/
+  503  cd ooiDAS
+  504  cd scripts
+  505  ls
+  506  source ~/.bashrc
+  507  conda activate ooi_dev
+  508  ls
+  509  python h5_upload.py 
+  510  conda activate ooi_dev
+  511  cd OOI_hydrophone_cloud
+  512  cd Code
+  513  cd OOI_hydrophone_cloud/
+  514  cd scripts
+  515  python mseed2zarr.py 
+  516  python mseed2zarr.py $AZURE_CONSTR_ooidata
+  517  $AZURE_CONSTR_ooidata
+  518  cd /datadrive
+  519  ls
+  520  df -h /datadrive
+  521  conda activate ooi_dev
+  522  bash jupyter.sh 
+  523  source ~/.bashrc
+  524  conda activate ooi_dev
+  525  AZURE_CONSTR_dasdata
+  526  $AZURE_CONSTR_dasdata
+  527  bash jupyter.sh 
+  528  source ~/.bashrc
+  529  conda activate ooi_dev
+  530  bash jupyter.sh 
+  531  source ~/.bashrc
+  532  conda activate ooi_dev
+  533  bash jupyter.sh 
+  534  cd /datadrive
+  535  ls
+  536  mkdir lfhydrophone
+  537  cd lfhydrophone/
+  538  ;s
+  539  ls
+  540  du -sh 2023_11_23_2023_12_23.zarr/
+  541  ls
+  542  rm -rf 2023_11_23_2023_12_23.zarr/
+  543  du -sh 2023_11_23_2023_12_23.zarr/
+  544  conda activate ooi_dev
+  545  bash jupyter.sh 
+  546  conda activate
+  547  ls
+  548  cd ..
+  549  ls
+  550  du -sh anaconda3_backup/
+  551  du -sh anaconda
+  552  du -sh anaconda3
+  553  conda activate ooi_dev
+  554  bmon
+  555  htop
+  556  du -s anaconda3
+  557  du -s anaconda3_backup/
+  558  du -h anaconda3_backup
+  559  du -sh anaconda3_backup
+  560  du -sh anaconda3
+  561  source ~/.bashrc
+  562  tmux ls
+  563  tmux a -t h5_upload
+  564  tmux kill-session
+  565  tmux ls
+  566  tmux new -s h5_upload
+  567  nano .bashrc
+  568  source ~/.bashrc
+  569  tmux ls
+  570  tmux a -t h5_upload
+  571  nano ~/.bashrc
+  572  tmux ls
+  573  tmux a -t mseed2zarr
+  574  tmux new -s mseed2zarr
+  575  nano ~/.bashrc
+  576  tmux ls
+  577  conda activate ooi_dev
+  578  cd Code/
+  579  cd OOI_hydrophone_cloud/scripts
+  580  ls
+  581  python mseed2zarr.py
+  582  source ~/.bashrc
+  583  conda activate ooi_dev
+  584  python mseed2zarr.py 
+  585  tmux new -s mseed2zarr
+  586  conda activate ooi_dev
+  587  htop
+  588  bmon
+  589  tmux new -s bmon
+  590  bmon
+  591  htconda activate ooi_dev
+  592  htop -d 0.5
+  593  conda activate ooi_dev
+  594  source ~/.bashrc
+  595  conda activate ooi_dev
+  596  python mseed2zarr.py 
+  597  azcopy copy 'https://ooidata.blob.core.windows.net/lfhydrophonemseed/2015_01_15.miniseed' 'test.mseed'
+  598  azcopy login
+  599  azcopy copy 'https://ooidata.blob.core.windows.net/lfhydrophonemseed/2015_01_15.miniseed' 'test.mseed'
+  600  conda activate ooi_dev
+  601  bash jupyter.sh 
+  602  conda activate ooi_dev
+  603  conda install -c conda-forge dask
+  604  conda activate ooi_dev
+  605  bash jupyter.sh 
+  606  conda activate ooi_dev
+  607  conda list
+  608  $AZURE_CONSTR_ooidata
+  609  ls
+  610  cd /
+  611  ls
+  612  df -h lfhydrophone
+  613  ls
+  614  df -h /lfhydrophone
+  615  lsblk
+  616  df -h datadrive
+  617  cd datadrive
+  618  ls
+  619  cd lfhydrophone
+  620  ls
+  621  nano ~./bashrc
+  622  nano ~/.bashrc
+  623  tmux new -s mseed2zarr
+  624  conda activate ooi_dev
+  625  cd ~
+  626  cd Code
+  627  cd OOI_hydrophone_cloud/
+  628  ls
+  629  cd scripts
+  630  l
+  631  spython mseed2zarr.py
+  632  python mseed2zarr.py
+  633  cd scripts
+  634  python mseed2zarr.py
+  635  conda activate ooi_dev
+  636  tmux ls
+  637  tmux a -t mseed2zarr
+  638  conda activate ooi_dev
+  639  tmux new -s bmon
+  640  tmux a -t bmon
+  641  conda activate ooi_dev
+  642  htop -d 0.6
+  643  cd /datadrive
+  644  cd lfhydrophone/
+  645  ls
+  646  du -sh ooi_lfhydrophones.zarr/
+  647  htop -d 0.5
+  648  bmon
+  649  conda activate ooi_dev
+  650  bash jupyter.sh 
+  651  cd /datadrive
+  652  ls
+  653  cd DAS
+  654  ls
+  655  du -sh psd.zarr
+  656  rm -rf psd.zarr
+  657  du -sh psd_distance.nc 
+  658  rm psd_distance.nc 
+  659  ls
+  660  htop -d 0.6
+  661  bmon
+  662  df -h
+  663  cd ..
+  664  ls
+  665  cd 
+  666  cd ~
+  667  du -sh *
+  668  ls
+  669  rm -rf anaconda3_backup
+  670  du -sh *
+  671  cd Code/OOI_hydrophone_cloud/
+  672  cd experimentation/
+  673  du -sh *
+  674  bmon
+  675  cd /datadrive
+  676  ls
+  677  cd lfhydrophone
+  678  ls
+  679  cd ~
+  680  ls
+  681  cd ..
+  682  ls
+  683  du -sh jhrag
+  684  htop -d 0.5
+  685  htop -d 0conda activate ooi_dev
+  686  conda activate ooi_dev
+  687  bash jupyter.sh 
+  688  conda activate ooi_dev
+  689  cd ~/Code
+  690  cd ooiDAS
+  691  ls
+  692  cd scripts
+  693  ls
+  694  python distance_psd.py
+  695  tmux ls
+  696  tmux new -s upload
+  697  tmux ls
+  698  tmux kill psd
+  699  tmux kill-session psd
+  700  tmux ls
+  701  tmux a -t jupyter
+  702  tmux ls
+  703  tmux a -t psd
+  704  tmu xls
+  705  tmux ls
+  706  tmux a -t upload
+  707  tmux new -s bmon
+  708  htop -d 0.5
+  709  conda activate ooi_dev
+  710  bash jupyter.sh 
+  711  tmux new -s jupyter
+  712  exit
+  713  conda deactivate
+  714  azcopy copy "/datadrive/lfhydrophone/ooi_lfhydrophones.zarr/" "https://ooidata.blob.core.windows.net/lfhydrophonezarr?sp=racwdli&st=2023-03-21T17:52:02Z&se=2023-03-29T01:52:02Z&spr=https&sv=2021-12-02&sr=c&sig=OyLKWOmWnEzoPCu%2BP%2BNAfnoERaFM1hNg63KvAnVHER0%3D"
+  715  azcopy copy "/datadrive/lfhydrophone/ooi_lfhydrophones.zarr/" "https://ooidata.blob.core.windows.net/lfhydrophonezarr?sp=racwdli&st=2023-03-21T17:52:02Z&se=2023-03-29T01:52:02Z&spr=https&sv=2021-12-02&sr=c&sig=OyLKWOmWnEzoPCu%2BP%2BNAfnoERaFM1hNg63KvAnVHER0%3D" --recursive
+  716  conda activate ooi_dev
+  717  cd /datadrive
+  718  ls
+  719  cd DAS
+  720  ls
+  721  rm psd_distance.nc 
+  722  tmux new -s psd
+  723  tmux ls
+  724  cd ~/Code
+  725  du -sh *
+  726  cd OOI_hydrophone_cloud/
+  727  ls
+  728  du -sh +*
+  729  du -sh *
+  730  cd scripts
+  731  ls
+  732  rm temp.miniseed 
+  733  cd ..
+  734  du -sh *
+  735  cd surface_duct/
+  736  ls
+  737  du -sh *
+  738  cd simulation
+  739  ls
+  740  du -sh *
+  741  cd ..
+  742  du -sh *
+  743  c d..
+  744  cd ..
+  745  du -sh *
+  746  df -h
+  747  cd ..
+  748  ls
+  749  du -sh jrhag
+  750  du -sh jhrag
+  751  cd ..
+  752  du -sh *
+  753  cd /datadrive
+  754  ls
+  755  wget https://www.bodc.ac.uk/data/open_download/gebco/gebco_2022_sub_ice_topo/zip/
+  756  conda activate ooi_dev
+  757  bmon
+  758  conda activate ooi_dev
+  759  tmux a -t upload
+  760  tmux ls
+  761  tmux new -s psd
+  762  htconda activate ooi_dev
+  763  htop -d 0.5
+  764  cd /
+  765  df -h /datadrive
+  766  cd /datdarie
+  767  cd /datadrive
+  768  ls
+  769  du -sh *
+  770  cd lfhydrophone/
+  771  ls
+  772  rm -rf ooi_lfhydrophones.zarr/
+  773  ls
+  774  c d..
+  775  cd ..
+  776  ls
+  777  mkdir tmp
+  778  ls
+  779  cd tmp
+  780  ls
+  781  htop -d 0.5
+  782  conda activate ooi_dev
+  783  cd /datadrive
+  784  ls
+  785  cd tmp
+  786  ls
+  787  du -sh dask-worker-space/
+  788  conda activate ooi_dev
+  789  ls
+  790  cd ooiDAS
+  791  ls
+  792  cd scripts
+  793  ls
+  794  python distance_psd.py 
+  795  conda activate ooi_dev
+  796  bash jupyter.sh 
+  797  $AZURE_KEY_ooidata
+  798  cd /datadrive
+  799  cd NCCFs
+  800  ls
+  801  rm 1hr_20150101_20230101_ec_cc.nc
+  802  rm 1hr_20150101_20230101_ec_cc2.nc 
+  803  tmux ls
+  804  tmux kill-session
+  805  tmux ls
+  806  tmux new -s NCCF
+  807  conda activate ooi_dev
+  808  cd ~
+  809  ls
+  810  cd Code
+  811  ls
+  812  cd ooi_NI_inversion/
+  813  cd scripts
+  814  ls
+  815  python calculate_NCCFstack.py 
+  816  bmon
+  817  conda activate ooi_dev
+  818  bash jupyter.sh 
+  819  conda activate ooi_dev
+  820  bash jupyter.sh 
+  821  conda activate ooi_dev
+  822  bash jupyter.sh 
+  823  cd /datadrive/HYCOM_data/
+  824  ls
+  825  conda activate ooi_dev
+  826  conda install -c conda-forge oceans
+  827  pip install oceans
+  828  conda activate ooi_dev
+  829  conda list
+  830  conda activate ooi_dev
+  831  bash jupyter.sh 
+  832  cd ODL-intake/
+  833  git status
+  834  git add .
+  835  git stauts
+  836  git status
+  837  git commit -m 'inital commit'
+  838  git remote add upstream https://github.com/Ocean-Data-Lab/ODL-intake.git
+  839  git pull
+  840  git remote
+  841  git remote add origin https://github.com/Ocean-Data-Lab/ODL-intake.git
+  842  git branch -M main
+  843  git push -u origin main
+  844  git status
+  845  cd ..
+  846  cd tutorials/
+  847  ls
+  848  git status
+  849  git add .
+  850  git status
+  851  git commit -m 'added kerchunk demo'
+  852  git push
+  853  tmux ls
+  854  tmux new -s nccf
+  855  conda activate ooi_dev
+  856  htop -d 0.5
+  857  conda activate ooi_dev
+  858  cd ooi_NI_inversion/
+  859  cd scripts
+  860  ls
+  861  python calculate_NCCFstack.py 
+  862  conda activate ooi_dev
+  863  nano ~/.bashrc
+  864  cd /datadrive
+  865  cd NCCFs/
+  866  du -sh *
+  867  cd ~/Code
+  868  ls
+  869  cd ODL-intake/
+  870  git init
+  871  sl
+  872  ls
+  873  git status
+  874  conda activate ooi_dev
+  875  bash jupyter.sh 
+  876  conda activate ooi_dev
+  877  bash jupyter.sh 
+  878  htop -d 0.5
+  879  cd /datadrive/NCCFs
+  880  ls
+  881  cd filtered
+  882  ls
+  883  mv axcc1_axec2_201_18hz axcc1_axec2_201_18hz.nc
+  884  mv axcc1_axec2_201_31hz axcc1_axec2_201_31hz.nc
+  885  mv axcc1_axec2_201_35hz axcc1_axec2_201_35hz.nc
+  886  mv axcc1_axec2_201_46hz axcc1_axec2_201_46hz.nc
+  887  ls
+  888  htop -d 0.6
+  889  cd ..
+  890  mkdir arrival_times
+  891  htop -d 0.6
+  892  cd /datadrive/NCCFs
+  893  ls
+  894  mkdir filtered
+  895  htop -d 0.5
+  896  cd /datadrive/NCCFs/arrival_times/
+  897  ls
+  898  du -sh filtered.nc 
+  899  conda activate ooi_dev
+  900  tmux new -s psd
+  901  conda activate ooi_dev
+  902  bash jupyter.sh 
+  903  conda activate ooi_dev
+  904  bash jupyter.sh 
+  905  conda activate ooi_dev
+  906  bash jupyter.sh 
+  907  conda activate ooi_dev
+  908  bash jupyter.sh 
+  909  wget https://marasondo2021.github.io/k3471web.wav
+  910  conda activate ooi_dev
+  911  bashj
+  912  bash jupyter.sh 
+  913  conda activate ooi_dev
+  914  bash jupyter.sh 
+  915  conda activate ooi_dev
+  916  bash jupyter.sh 
+  917  conda activate ooi_dev
+  918  bash jupyter.sh 
+  919  cd /datadrive
+  920  ls
+  921  cd NCCFs/filtered
+  922  l
+  923  conda activate ooi_dev
+  924  bsah jupyter.sh 
+  925  bash jupyter.sh 
+  926  conda activate ooi_dev
+  927  bash jupyter.sh 
+  928  conda activate ooi_dev
+  929  bash jupyter.sh 
+  930  conda activate ooi_dev
+  931  conda install -c plotly plotly
+  932  cd /datadrive
+  933  ls
+  934  cd simulation
+  935  ls
+  936  cd ..
+  937  ls
+  938  cd DAS
+  939  ls
+  940  cd ~
+  941  l
+  942  cd Code
+  943  ls
+  944  cd /datdarive
+  945  cd /datadrive
+  946  wget https://www.bodc.ac.uk/data/open_download/gebco/gebco_2022/zip/
+  947  htop
+  948  conda activate ooi_dev
+  949  cd /datadrive
+  950  ls
+  951  cd DAs
+  952  ls
+  953  cd CAS
+  954  cd DAS
+  955  ls
+  956  mkdir slices
+  957  ls
+  958  df -h /datadrive
+  959  cd ..
+  960  du -sh *
+  961  cd DAS
+  962  ls
+  963  du -sh *
+  964  cd psd.nc/
+  965  l
+  966  cd psd
+  967  ls
+  968  cd ..
+  969  ls
+  970  rm -rf psd.nc
+  971  df -h /datdarive
+  972  df -h /datadrive
+  973  ls
+  974  mkdir slices
+  975  htop -d 0.5
+  976  conda activate ooi_dev
+  977  cd ooiDAS/
+  978  ls
+  979  cd scripts
+  980  ls
+  981  cd ..
+  982  ls
+  983  cd notebooks/
+  984  ls
+  985  python calculate_hour_PSD.py 
+  986  history > error_log.txt
