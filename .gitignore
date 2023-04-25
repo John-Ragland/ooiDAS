@@ -1,2 +1,8 @@
 *.png
 notebooks/.ipynb_checkpoints/
+*.env
+*.flp
+*.shd
+*.mod
+*.prt
+*.svg
